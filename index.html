@@ -645,11 +645,27 @@ Enroll Now</button>
     easing: "ease-in-out"
   });
 </script>
+<!-- Initialize animations and fade effects -->
+<script>
+  // Initialize AOS (Animate On Scroll)
+  AOS.init({
+    duration: 1000,  // Animation duration in milliseconds
+    once: true,      // Animate only once when scrolled into view
+    easing: "ease-in-out"
+  });
 
+  // Add smooth fade-in to entire page when it loads
+  document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("animate__animated", "animate__fadeIn");
+  });
+</script>
+
+    
 </body>
 
 
 </html>
+
 
 
 
